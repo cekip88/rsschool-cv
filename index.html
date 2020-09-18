@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <link rel="stylesheet" property="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <h1 class="main_title">
+      My resume
+    </h1>
+  </header>
+  <main>
+    <div class="photo">
+      <img src="assets/avatar.jpg" alt="">
+    </div>
+    <p>
+      <b>
+        My name:
+      </b>
+      Ruslan Sekerbayev
+    </p>
+    <p>
+      <b>
+        My contacts:
+      </b>
+      <a href="mailto:cekip@mail.ru">
+        mail
+      </a>
+      ,
+      <a href="vk.com/sekerbaev">
+        vk
+      </a>
+    </p>
+    <p>
+      <b>
+        What I want:
+      </b>
+      I want to be a professional programmer, I want to solve interesting tasks. Programming is interesting)
+    </p>
+    <p>
+      <b>
+        My skills:
+      </b>
+      JavaScript(beginner), HTML&CSS(user).
+    </p>
+    <p class="code_example">
+      <b>
+        Code Example:
+      </b>
+      <code>
+        <span>
+          <b class="orange">
+            function
+          </b>
+          <b class="yellow">
+            createEl
+          </b>
+          (tag
+          <b class="yellow">
+            ,
+          </b>
+          className
+          <b class="yellow">
+            ,
+          </b>
+          data = {}
+          <b class="yellow">
+            ,
+          </b>
+          childs = []){
+        </span>
+        <span class="ml20">
+          <b class="orange">
+            let
+          </b>
+          temp =
+          <b class="viol">
+            document
+          </b>
+          .
+          <b class="yellow">
+            createElement
+          </b>
+          (${tag})
+          <b class="orange">
+            ;
+          </b>
+        </span>
+        <span class="ml20">
+          <b class="orange">
+            if
+          </b>
+          (className) temp.
+          <b class="viol">
+            className
+          </b>
+          = className
+          <b class="orange">
+            ;
+          </b>
+        </span>
+        <span class="ml20">
+          <b class="orange">
+            if
+          </b>
+          (data){
+        </span>
+        <span class="ml40">
+          <b class="orange">
+            for
+          </b>
+          (
+          <b class="orange">
+            let
+          </b>
+          key
+          <b class="orange">
+            in
+          </b>
+          data){
+        </span>
+        <span class="ml60">
+          <b class="orange">
+            if
+          </b>
+          (key === 'text') {
+        </span>
+        <span class="ml80">
+          <b class="orange">
+            if
+          </b>
+          (tag === 'INPUT' || tag === 'TEXTAREA') temp.
+          <b class="viol">
+            value
+          </b>
+          = data[key]
+          <b class="orange">
+            ;
+          </b>
+        </span>
+        <span class="ml80">
+          <b class="orange">
+            else
+          </b>
+          temp.
+          <b class="viol">
+            textContent
+          </b>
+          = data[key]
+          <b class="orange">
+            ;
+          </b>
+        </span>
+        <span class="ml60">
+          }
+          <b class="orange">
+            else if
+          </b>
+          (key === 'innerHTML') temp.
+          <b class="viol">
+            innerHTML
+          </b>
+          = data[key]
+          <b class="orange">
+            ;
+          </b>
+        </span>
+        <span class="ml60">
+          <b class="orange">
+            else
+          </b>
+          temp.
+          <b class="yellow">
+            setAttribute
+          </b>
+          (${key}
+          <b class="orange">
+            ,
+          </b>
+          ${data[key]})
+          <b class="orange">
+            ;
+          </b>
+        </span>
+        <span class="ml40">
+          }}
+        </span>
+        <span class="ml20">
+          <b class="orange">
+            if
+          </b>
+          (childs) {
+        </span>
+        <span class="ml40">
+          <b class="orange">
+            if
+          </b>
+          (
+          <b class="orange">
+            typeof
+          </b>
+          childs === 'object'){
+        </span>
+        <span class="ml60">
+          childs.
+          <b class="yellow">
+            forEach
+          </b>
+          (
+          <b class="orange">
+            function
+          </b>
+          (el) {
+        </span>
+        <span class="ml80">
+          temp.
+          <b class="yellow">
+            append
+          </b>
+          (el)
+        </span>
+        <span class="ml60">
+          })
+          <b class="orange">
+            ;
+          </b>}}
+        </span>
+        <span class="ml20">
+          <b class="orange">
+            return
+          </b>
+          temp
+          <b class="orange">
+            ;
+          </b>
+        </span>
+        <span>
+          })
+        </span>
+      </code>
+    </p>
+    <p>
+      <b>
+        About me:
+      </b>
+      I am working in small company web-developers and learning to coding on JS. I have not portfolio. Now I write small library that can show some information in modal windows.
+    </p>
+    <p>
+      <b>
+        My education:
+      </b>
+      I am learning in small web-programming courses "GrammlaSchool" in my city. That's all about coding)
+    </p>
+    <p>
+      <b>
+        English:
+      </b>
+      My English is not very well, last practice was in university more than 10 years ago. I planing to learn english that autumn, but it only will)
+    </p>
+    <footer>
+      <p>
+        Thats all I have to say)))
+      </p>
+    </footer>
+  </main>
+</body>
+</html>

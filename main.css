@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    -webkit-text-size-adjust: 100%; }
+
+@font-face {
+    font-family: "MPrat";
+    src: url("assets/Roboto-Regular.ttf");
+}
+
+a {
+    color: #000; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    font-size: 1em; }
+
+em, strong, i, b, address, cite {
+    font-style: normal;
+    font-weight: 500; }
+
+ul, ol {
+    list-style: none; }
+
+input[type='submit'], button {
+    cursor: pointer;
+    background: transparent;
+    border: 0; }
+
+img {
+    max-width: 100%; }
+
+html, body {
+    min-height: 100vh; }
+
+body {
+    width: 100%;
+    height: 100%;
+    font: 14px "MPrat";
+    color: #231f20; }
+
+input, button {
+    font-family: inherit;
+    font-size: inherit; }
+
+input {
+    background-color: transparent;
+    border: none; }
+
+
+body{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0;
+    position: relative;
+}
+header{
+    margin-bottom: 30px;
+}
+main{
+    width: calc(100% - 200px);
+}
+p{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+p>b{
+    font-weight: 700;
+    flex: 0 0 100px;
+}
+code{
+    font-weight: 600;
+    color: lightslategray;
+}
+code span{
+    display: block;
+}
+.ml20{
+    margin-left: 20px;
+}
+.ml40{
+    margin-left: 40px;
+}
+.ml60{
+    margin-left: 60px;
+}
+.ml80{
+    margin-left: 80px;
+}
+.viol{
+    color: blueviolet;
+}
+.orange{
+    color: orangered;
+}
+.yellow{
+    color: orange;
+}
+.green{
+    color: forestgreen;
+}
+.main_title{
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.photo{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
